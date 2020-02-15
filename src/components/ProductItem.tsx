@@ -17,7 +17,7 @@ const ProductItem: React.FC<Props> = ({ url, children }) => {
       flexDirection: 'column',
       justifyContent: 'space-between',
       color: '#fff',
-      padding: '1rem',
+      padding: xsBreakPoint ? '1rem' : '1rem 5rem',
       ...(xsBreakPoint && { marginTop: '1rem' })
     }
   })()
